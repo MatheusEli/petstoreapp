@@ -1,0 +1,13 @@
+type Pet @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  age: Int
+  name: String!
+  breed: String
+  about: String
+  image: String
+  color: String
+
+  _version: Int
+  _lastChangedAt: AWSDateTime
+  _deleted: Boolean
+}
